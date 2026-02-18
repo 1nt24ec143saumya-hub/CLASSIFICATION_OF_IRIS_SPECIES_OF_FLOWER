@@ -1,124 +1,136 @@
+# 🌸 Iris Species Prediction using Machine Learning
 
+![Iris Dataset Banner](https://www.embedded-robotics.com/wp-content/uploads/2022/01/Iris-Dataset-Classification-1024x367.png)
 
-🌸 Iris Species Prediction using Machine Learning
+<sub>Image Source: https://www.embedded-robotics.com/wp-content/uploads/2022/01/Iris-Dataset-Classification-1024x367.png</sub>
 
-<img width="1024" height="367" alt="Iris-Dataset-Classification-1024x367" src="https://github.com/user-attachments/assets/91e26eed-b78f-4388-8ac3-9ddadb4878ba" />
+---
 
-Image Source: https://www.embedded-robotics.com/wp-content/uploads/2022/01/Iris-Dataset-Classification-1024x367.png
+## 📌 Overview
 
+This project focuses on developing a supervised machine learning model capable of identifying iris flower species based on their physical measurements.
 
+The classification task involves three species:
 
-📌 Overview
+- **Setosa**
+- **Versicolor**
+- **Virginica**
 
-This project focuses on building a supervised machine learning model that can identify the species of an iris flower based on its physical dimensions. The iris dataset is one of the most well-known datasets in the field of data science and pattern recognition.
+Each species can be distinguished using four measurable attributes:
 
-The classification task involves distinguishing between three different iris species:
-	•	Setosa
-	•	Versicolor
-	•	Virginica
+- Sepal Length  
+- Sepal Width  
+- Petal Length  
+- Petal Width  
 
-Each species differs in measurable attributes such as sepal length, sepal width, petal length, and petal width.
+---
 
-⸻
+## 🎯 Project Objective
 
-🎯 Project Goal
+The primary goal of this project is to build and evaluate classification models that accurately predict the species of an iris flower using numerical feature inputs.
 
-The main objective of this project is to design and evaluate classification models that can accurately predict the species of an iris flower using numerical feature inputs.
+By applying machine learning techniques, this project demonstrates how structured biological data can be used to generate reliable predictive models.
 
-By leveraging machine learning techniques, this project demonstrates how structured biological data can be transformed into predictive insights.
+---
 
-⸻
+## 📊 Dataset Description
 
-📊 Dataset Description
+The dataset contains labeled samples of iris flowers. Each record consists of:
 
-The dataset consists of labeled samples of iris flowers. Each record includes:
-	•	Sepal Length
-	•	Sepal Width
-	•	Petal Length
-	•	Petal Width
-	•	Species Label
+- Sepal Length  
+- Sepal Width  
+- Petal Length  
+- Petal Width  
+- Species (Target Variable)
 
-These four numerical features act as predictors, while the species serves as the target variable.
+The four numerical features serve as predictors, while the species label represents the output class.
 
-⸻
+---
 
-🛠 Approach
+## 🛠 Methodology
 
-The workflow followed in this project includes:
-	1.	Exploratory Data Analysis (EDA)
-	•	Studied feature distributions
-	•	Examined inter-feature relationships
-	•	Observed class separability
-	2.	Data Preparation
-	•	Checked for inconsistencies and missing values
-	•	Prepared the dataset for modeling
-	3.	Model Building
-Multiple classification algorithms were trained and compared:
-	•	Decision Tree
-	•	Random Forest
-	•	Naive Bayes
-	4.	Model Evaluation
-Recall was selected as the primary evaluation metric to ensure effective class detection performance.
-Models showing perfect training scores (indicative of overfitting) were excluded from final consideration.
+The following steps were performed:
 
-⸻
+### 1. Exploratory Data Analysis (EDA)
+- Examined feature distributions  
+- Studied relationships between variables  
+- Analyzed class separability  
 
-📈 Performance Comparison
+### 2. Data Preparation
+- Checked for missing values  
+- Ensured data consistency  
+- Prepared the dataset for model training  
 
-Below are the refined model results after eliminating overfitted candidates:
+### 3. Model Development
+The following classification algorithms were implemented:
 
-S.No	Model	Recall (Train %)	Recall (Test %)
-1	Decision Tree (Tuned)	95.24	95.56
-2	Random Forest (Tuned)	97.14	97.78
-3	Naive Bayes	94.28	97.78
-4	Naive Bayes (Tuned)	94.28	97.78
+- Decision Tree  
+- Random Forest  
+- Naive Bayes  
 
+### 4. Model Evaluation
+- **Recall** was selected as the primary evaluation metric.  
+- Overfitted models (with 100% training performance) were excluded from final comparison to ensure realistic evaluation.
 
-⸻
+---
 
-🏆 Final Model Selection
+## 📈 Model Performance
 
-After comparing performance metrics, the Tuned Random Forest model was selected as the final predictive model due to:
-	•	Strong generalization performance
-	•	High recall on unseen data
-	•	Stability across training and testing datasets
+| S.No | Model                   | Recall (Train %) | Recall (Test %) |
+|------|-------------------------|------------------|-----------------|
+| 1    | Decision Tree (Tuned)   | 95.24            | 95.56           |
+| 2    | Random Forest (Tuned)   | 97.14            | 97.78           |
+| 3    | Naive Bayes             | 94.28            | 97.78           |
+| 4    | Naive Bayes (Tuned)     | 94.28            | 97.78           |
 
-⸻
+---
 
-🔍 Key Insights
-	•	Setosa is clearly distinguishable from the other two species.
-	•	Petal-related features contribute significantly to classification.
-	•	Ensemble methods (like Random Forest) provide robust performance for this dataset.
+## 🏆 Final Model Selection
 
-⸻
+The **Tuned Random Forest** classifier was selected as the final model because it demonstrated:
 
-🚀 Future Enhancements
+- Strong generalization performance  
+- High recall on unseen data  
+- Stable results across training and testing datasets  
 
-Potential improvements include:
-	•	Hyperparameter optimization using advanced search techniques
-	•	Testing additional ensemble models
-	•	Visualizing feature importance in greater depth
-	•	Deploying the model as a web-based application
+---
 
-⸻
+## 🔍 Key Observations
 
-🌱 Real-World Relevance
+- The Setosa species is distinctly separable from the other two species.
+- Petal-related features play a significant role in classification.
+- Ensemble methods provide robust and consistent results.
 
-Automated species classification systems can assist in:
-	•	Botanical research
-	•	Agricultural studies
-	•	Environmental monitoring
-	•	Educational demonstrations of classification algorithms
+---
 
-⸻
+## 🚀 Future Scope
 
-👩‍💻 Author
+Possible enhancements include:
 
-Saumya Srivastava
+- Advanced hyperparameter optimization  
+- Testing additional ensemble algorithms  
+- Detailed feature importance visualization  
+- Deployment as a web-based application  
 
-⸻
+---
 
-📚 Reference
-	•	Oasis Infobyte
+## 🌱 Applications
 
-⸻
+This classification model can support:
+
+- Botanical research  
+- Environmental monitoring  
+- Agricultural analysis  
+- Educational demonstrations of supervised learning  
+
+---
+
+## 👩‍💻 Author
+
+**Saumya Srivastava**
+
+---
+
+## 📚 Reference
+
+- Oasis Infobyte
