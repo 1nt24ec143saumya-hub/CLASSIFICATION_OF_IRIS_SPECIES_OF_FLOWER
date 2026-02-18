@@ -1,35 +1,42 @@
-# Iris Flower Classification
+# Iris Classification using KNN
 
 ![Iris Dataset](https://www.embedded-robotics.com/wp-content/uploads/2022/01/Iris-Dataset-Classification-1024x367.png)
 
-This project builds a machine learning model to classify iris flowers into three species: Setosa, Versicolor, and Virginica.
+This project demonstrates a basic machine learning workflow using the Iris dataset from scikit-learn.
 
-The classification is based on four features:
-- Sepal Length
-- Sepal Width
-- Petal Length
-- Petal Width
+## Overview
 
-## Objective
-To train and evaluate models that can predict the species of an iris flower using these measurements.
+The dataset contains measurements of iris flowers based on four features:
 
-## Method
-- Performed basic data analysis and preprocessing  
-- Trained Decision Tree, Random Forest, and Naive Bayes models  
-- Used recall as the main evaluation metric  
-- Removed overfitted models with perfect training scores  
+- Sepal length  
+- Sepal width  
+- Petal length  
+- Petal width  
 
-## Results
+Each sample belongs to one of three classes:
+- Setosa  
+- Versicolor  
+- Virginica  
 
-| Model                 | Recall (Train %) | Recall (Test %) |
-|-----------------------|------------------|-----------------|
-| Decision Tree (Tuned) | 95.24            | 95.56           |
-| Random Forest (Tuned) | 97.14            | 97.78           |
-| Naive Bayes           | 94.28            | 97.78           |
-| Naive Bayes (Tuned)   | 94.28            | 97.78           |
+## Steps Performed
 
-## Conclusion
-The tuned Random Forest model was selected as the final model due to its consistent performance on both training and test data.
+- Checked Python and library versions (NumPy, pandas, matplotlib, SciPy, scikit-learn, etc.)
+- Loaded the Iris dataset using `load_iris()`
+- Explored dataset structure (features, target names, shape, sample data)
+- Split the dataset into training (75%) and testing (25%) sets
+- Visualized training data using a scatter matrix
+- Trained a **K-Nearest Neighbors (KNN)** classifier with `n_neighbors=1`
+- Predicted the class of a new sample: `[5, 2.9, 1, 0.2]`
+- Evaluated model accuracy on the test set
+
+## Model
+
+KNeighborsClassifier (k = 1)
+
+## Result
+
+The model achieved a high accuracy score on the test dataset using the KNN algorithm.
 
 ## Author
+
 Saumya Srivastava
