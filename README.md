@@ -122,5 +122,3 @@ Saumya Srivastava
 	•	Oasis Infobyte
 
 ⸻
-
-If you’d like, I can also make a more minimal, more professional, or more GitHub-polished version depending on where you’re submitting it (internship, college, portfolio, etc.).
